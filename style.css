@@ -1,0 +1,139 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  background: #f8f8fb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 0.7rem;
+}
+
+.brand-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #e93f43;
+}
+
+.banner {
+  position: relative;
+  background: url("../images/banner.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.banner h1 .quick-e-logo {
+  background: #e93f43;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1.2rem;
+  color: #fff;
+  margin-left: 0.4rem;
+  font-family: "Poppins", cursive, sans-serif;
+}
+
+.offer {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.twinning {
+  color: #00e16d;
+}
+.winning {
+  color: #e93f43;
+  margin-left: 0.6rem;
+}
+.buy1get1 {
+  color: #fff;
+  margin-left: 1.2rem;
+}
+.free {
+  color: #17e5ff;
+  background: #222;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.burgers-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.burger-img {
+  width: 160px;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px 20px rgba(50, 50, 50, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .banner {
+    height: 40vh;
+  }
+  .banner h1 {
+    font-size: 2rem;
+  }
+  .burger-img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar,
+  .banner-overlay {
+    padding: 0.6rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+  .banner h1 {
+    font-size: 1.2rem;
+  }
+}
